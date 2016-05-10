@@ -1,0 +1,16 @@
+* {
+  box-sizing: border-box;
+}
+
+button {
+  width: 100px;
+  height: 80px;
+  font-size: 4em;
+}
+
+#display {
+  height: 80px;
+  width: 308px;
+  font-size: 4em;
+  text-align: right;
+}
