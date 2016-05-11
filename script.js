@@ -14,21 +14,13 @@ $(function () {
   //when an operator is clicked
   $(".operator").click(function () {
     //store the number
-    currentNumber = Number(display)
+    currentNumber = Number(display);
     var newNumber = Number(display);
     if (currentNumber && operator) {
       //evaluate the operator upon the existing number and the new number
-      if (operator === "+") {
-        currentNumber = currentNumber + newNumber;
-      } else if (operator === "-") {
-        currentNumber = currentNumber - newNumber;
-      } else if (operator === "*") {
-        currentNumber = currentNumber * newNumber;
-      } else if (operator === "/") {
-        currentNumber = currentNumber / newNumber;
-      } else {
-        currentNumber = newNumber;
-      }
+      currentNumber = performOperation(newNumber);
+    } else {
+      currentNumber = newNumber;
     }
     //get name of operator clicked
     operator = $(this).text();
@@ -45,17 +37,7 @@ $(function () {
     //if there is an existing operator and existing number
     if (currentNumber && operator) {
       //evaluate the operator upon the existing number and the new number
-      if (operator === "+") {
-        currentNumber = currentNumber + newNumber;
-      } else if (operator === "-") {
-        currentNumber = currentNumber - newNumber;
-      } else if (operator === "*") {
-        currentNumber = currentNumber * newNumber;
-      } else if (operator === "/") {
-        currentNumber = currentNumber / newNumber;
-      } else {
-        currentNumber = newNumber;
-      }
+      currentNumber = performOperation(newNumber);
     }
     //unset the operator
     operator = null;
@@ -75,3 +57,17 @@ $(function () {
     $("#display").val(display);
   });
 });
+
+function performOperation(newNumber) {
+  var result;
+  if (operator === "+") {
+    result = currentNumber + newNumber;
+  } else if (operator === "-") {
+    result = currentNumber - newNumber;
+  } else if (operator === "*") {
+    result = currentNumber * newNumber;
+  } else if (operator === "/") {
+    result = currentNumber / newNumber;
+  }
+  return result;
+}
