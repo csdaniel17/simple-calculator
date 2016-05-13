@@ -2,6 +2,9 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Trebuchet MS", Helvetica, sans-serif;
+  text-align: center;
+  color: #808080;
 }
 
 body {
@@ -9,13 +12,12 @@ body {
 }
 
 #container {
-  margin: 100px auto;
+  margin: 50px auto;
 }
 
 h1 {
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
-  text-align: center;
-  color: #878787;
+  margin: 50px auto 30px;
+  font-size: 3em;
 }
 
 table {
@@ -23,7 +25,7 @@ table {
   border: 3px solid #bfbfbf;
   box-shadow: 5px 5px #999999;
   padding: 10px;
-  margin: 30px auto;
+  margin: 50px auto;
   border-radius: 4px;
 }
 
@@ -37,7 +39,6 @@ button {
   font-size: 2em;
   background-color: #f2f2f2;
   transition: 0.25s;
-  font-family: "Trebuchet MS", Helvetica, sans-serif;
 }
 
 button:active {
@@ -54,7 +55,6 @@ button:focus {
   width: 304px;
   font-size: 3em;
   text-align: right;
-  color: #878787;
   border: 3px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
   background-color: #f2f2f2;
@@ -69,7 +69,6 @@ button:focus {
   background-color: #cc99ff;
   border: 5px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
-  color: #878787;
   border-radius: 5px;
 }
 
@@ -77,21 +76,18 @@ button:focus {
   background-color: #40ddcb;
   border: 5px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
-  color: #878787;
   border-radius: 5px;
 }
 
 .number {
   border: 3px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
-  color: #878787;
   border-radius: 5px;
 }
 
 .operator {
   border: 3px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
-  color: #878787;
   border-radius: 5px;
 }
 
