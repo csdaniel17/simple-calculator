@@ -66,14 +66,16 @@ button:focus {
 }
 
 .clear {
-  background-color: #23a9ff;
+  background-color: #808080;
+  color: #f2f2f2;
   border: 5px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
   border-radius: 5px;
 }
 
 .evaluate {
-  background-color: #40ddcb;
+  background-color: #8e8e8e;
+  color: #f2f2f2;
   border: 5px solid #bfbfbf;
   box-shadow: 2px 2px #999999;
   border-radius: 5px;
